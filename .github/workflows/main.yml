@@ -33,7 +33,7 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ce26616ab69961f90b45412d6fc2b44a2ae61298
+          SONAR_TOKEN: 5a01ed5c623a5a0a1ba3f1db33a1b973beb6ba6b
           SONAR_HOST_URL: https://sonarcloud.io]
           
       # Check the Quality Gate status.
@@ -45,4 +45,4 @@ jobs:
         with:
           scanMetadataReportFile: src/.scannerwork/report-task.txt
         env:
-         SONAR_TOKEN: ce26616ab69961f90b45412d6fc2b44a2ae61298
+         SONAR_TOKEN: 5a01ed5c623a5a0a1ba3f1db33a1b973beb6ba6b
